@@ -1,0 +1,358 @@
+/*Подключение шрифта и css reset*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto.eot');
+	src: url('../font/Roboto.eot?#iefix') format("embedded-opentype"),
+	     url('../font/Roboto.woff') format('woff'),
+	     url('../font/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font: normal 700 18px/21px "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #070707;
+}
+/*формат основных блоков*/
+main {
+    width: 1445px;
+    height: 4759px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+header {
+    margin: 0 255px 0 250px;
+    width: 940px;
+    height: 768px;
+}
+header~article {
+    background: #F6F6F6;
+    height: 506px;
+    width: 1445px;
+}
+article+article {
+    background: #FFFFFF;
+    height: 610px;
+    width: 1445px;
+}
+section {
+    background: #F6F6F6;
+    height: 2253px;
+    width: 1445px;
+}
+footer {
+    height:622px;
+    background: #FFFFFF;
+    width: 1445px;
+}
+/*Формат внутри блоков по порядку*/
+/*1 block*//*
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }*/
+nav {position: absolute;}/*для изменения местоположения на всей страничке*/
+ul {
+    display: block;
+    padding-top:35px;
+    padding-left: 1px;
+    height: 54px;
+    width: 940px;   
+}
+ul li {    
+    display: inline-block;
+    list-style-type: none;
+}
+ul li a{
+    font-weight: bold;
+    line-height: 30px;
+    color: #828282;
+}
+ul li a:hover {
+    transition: 0.5s linear;
+    text-shadow: 1px 2px 1.5px rgba(255, 255, 255, 0.5), 3px 5px 4px rgba(0, 0, 0, 0.5);
+    color: #070707;
+}
+a, a:hover {
+	outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.active {color: #070707;}
+hr {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 0.3px;
+}
+h1 {
+    float: left;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 55px;
+    width: 320px;
+    margin-top: 124px;
+}
+h1+p{
+    position: absolute;
+    float: right;
+    margin: 180px 0 0 420px;
+    width: 270px;
+    height: 44px;    
+}
+img[alt="headerImage"] {
+    z-index: 2;
+    position: relative;
+    margin: 47px 0 0 1px;
+    width:940px;
+    height:400px;
+}
+img+div {
+    position: absolute;
+    z-index: 1;
+    background: #090909;
+    width: 939.4px;
+    height: 381px;
+    left: 256px;
+    top: 280px;
+}
+/*2 block*/
+h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    padding: 89px 0 10px 0; 
+}
+article p {
+    text-align: center;
+    margin:43px 0 -1px 0;
+}
+/*3 block*/
+.skills {
+    margin: 92px 250px 0 250px;
+    width: 950px;
+    height: 205px;
+}
+    .skills>div {
+        width: 170px;
+        height: 205px;
+        margin: 0 89px 0 0;
+        float: left;
+    }
+        .skills div:nth-child(4) {margin: 0 0 0 0;}
+h3, figcaption {
+    display: block;
+    margin: 25px auto 0 auto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #828282;
+    width: 102px;
+}
+pre {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #828282;
+    margin-top: 25px;
+}
+div img[alt="Ps"] {
+    display: block;
+    margin: 0 auto;
+    background: radial-gradient(64px at 33% 22%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+    height: 87px;
+}
+div img[alt="Ai"] {
+    display: block;
+    margin: 0 auto;
+    background: radial-gradient(64px at 33% 22%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+    height: 87px;
+}
+div img[alt="Ae"] {
+    display: block;
+    margin: 0 auto;
+    background: radial-gradient(64px at 33% 22%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+    height: 87px;
+}
+figcaption a {
+    text-decoration-line: underline;
+    letter-spacing: -0.1px;
+}
+/*Подключить когда будут реальные ссылки*/
+/*figcaption a:visited {color: #11a8ad;}
+figcaption a:visited:hover {color: #aa2828;}*/
+/*4 block*/
+section figure {
+    margin-bottom: 93px;
+}
+section figcaption {
+    width: 300px;
+}
+section img {
+    height: 510px;
+    width: 940px;
+    display: block;
+    margin: 84px auto 40px auto;
+}
+/*5 block*/
+footer p {
+   text-align: center;
+   margin: 44px 0 61px -3px;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    background: #070707;
+    color: #FFFFFF;
+    width: 178px;
+    margin: 0 auto 57px 635px;
+    padding: 9px 0;
+    cursor: pointer;
+    border: 1px solid #070707;
+}
+    .button:hover, .button:focus {
+        color: #cacaca; 
+        border: 1px solid  #555555;
+        box-shadow: 5px 5px 5px rgba(53, 53, 53, 0.568), 3px 3px 3px rgb(255, 255, 255);
+        transition: 0.2s linear;
+    }
+    .button:active {
+        color: #ffffff;
+        box-shadow: 0 0 7px rgb(53, 53, 53);
+        border: 1px solid #00a2ad;
+    }
+.social ul{
+    margin: auto;
+    width: 340px;
+}
+    .social ul a{
+        background-image: url("../img/Sprite/Social.svg");
+        width: 40px;
+        height: 40px;
+        float: left;
+        display: block;
+    }
+/*Выравнивание по макету*/
+        nav li:nth-child(2) {
+            margin-left: 167px; 
+        }
+        nav li:nth-child(3) {
+            margin-left: 134px;
+        }
+        nav li:nth-child(4) {
+            margin-left:179px;
+        }
+        nav li:nth-child(5) {   
+            /*margin-left: 129.9px;*/
+            float: right;
+        }
+        .social li:nth-child(1) a {
+            width: 41px; 
+            margin-right: 57px;
+        }
+        .social li:nth-child(2) a {
+            background-position: -42px 0px;
+            margin-right: 54px;
+            
+        }
+        .social li:nth-child(3) a {
+            width: 41px; 
+            background-position: -82.5px 0px;   
+        }
+        .social li:nth-child(4) a {
+            background-position: -124px 0px;  
+        }
+        .social li:nth-child(4) {
+            /*margin-left: 53px;*/
+            float: right;
+        }
+        .logoFigma ~ .rating {
+            margin: 50px 0 0 -1px; 
+        }
+ /*STARS*/
+
+
+ .rating{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 166px;
+    margin-top: 37px;
+    position: relative;}
+    .rating > div {
+    transition: 0.3s linear;
+    width: 21px;
+    height: 20px;
+    background: url(../img/StarX.svg);
+    cursor: pointer;}
+        .rating > div.active, .rating > div.active ~ *, .rating > div:hover, .rating > div:hover ~ *
+        { background: url(../img/StarXX.svg) ; }
+ /*Удалить*/
+ /*
+.rating{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 166px;
+      margin: 37px 0 0 0; 
+      position: relative;
+}
+.rating-item {
+          transition: 1s linear;
+          width: 21px;
+          height: 20px;
+          background: url(../img/StarX.svg);
+          /*background-position: 0px 0;
+          cursor: pointer;
+          margin-left: 4px;
+}
+.rating-item.active, .rating-item.active ~ *, .rating-item:hover, .rating-item:hover ~ *
+{ background: url(../img/StarXX.svg); }
+/*LOGO FIGMA*/
+.logoFigma {
+    width: 60px;
+    height: 90px;
+    margin: 0 auto;
+}
+.logoItem {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.red  {background: #F24E1E;}
+.wine {background: #FF7262;}
+.pink {background: #A259FF;}
+.blue {background: #1ABCFE;}
+.green{background: #0ACF83;}
+.leftCircle { 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.rightCircle {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.circles {border-radius: 50%;}
+.drib {
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+/*class NAV position and shadows*/
+.Home {top: 0;}
+.AboutMe {top:768px;}
+.AboutMe ul, .Skills ul, .Portfolio ul, .Contacts ul {padding-top: 20px;}
+.AboutMe hr , .Skills hr , .Portfolio hr , .Contacts hr  {box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);}
+.Skills {top: 1274px;}
+.Portfolio {top: 1884px;}
+.Contacts {top: 4137px;}
+/*хаки шрифтов*/
+@-moz-document url-prefix() { * {  letter-spacing: -0.3px;}}
+body:last-child:not(:root:root) * { letter-spacing: -0.3px;}
+/*OVER*/
+
+
